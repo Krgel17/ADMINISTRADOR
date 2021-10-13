@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="static/CSS/normalize.min.css">
+    <link rel="stylesheet" href="static/css/estilo-layout.css">
+    <link rel="stylesheet" href="static/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <header>
+        <article>
+            <div class="encabezado">
+                <div class="logo">
+                    <img src="static/img/logo.jpg" >
+                </div>
+                <div class="usuario">
+                    <label>User</label>
+                        <em class="fas fa-user-circle"></em>
+                        <div>
+                            <input class="btn1" type="button" value="Cerrar sesion" name="cerrar sesion">
+                        </div>
+                    
+                </div>
+            </div>            
+        </article>
+    </header>
+    <h1>Administrador</h1>
+    <section>
+        <div class="ventanas">
+            <ul class="tabs">
+                <li class="usuario"><a href="#tab1"><span class="fas fa-users"></span><span class="tab-text"> Usuarios</span></a></li>
+                <li class="usuario"><a href="#tab2"><span class="fas fa-user-shield"></span><span class="tab-text">Pilotos</span></a></li>
+                <li class="usuario"><a href="#tab3"><span class="fas fa-plane-departure"></span><span class="tab-text">Vuelos</span></a></li>
+            </ul>
+        </div>
+        <div class="pantallas">
+            <article class="usuario1" id="tab1">
+                <div class="crear1">
+                    <input class="btn1" type="submit" value="Crear Nuevo Usuario ">
+                </div>
+                <div class="caja">
+                    <input class="cuadro" type="search" placeholder="Consultar usuario"><br>
+                </div>
+                <div class="caja">
+                    <input class="boton" type="submit" value="Buscar"><br>
+                </div>               
+            </article>
+            <article>
+            <div class="tabla">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            
+                            <th>Código</th>
+                            <th>Identificación</th>
+                            <th>Nombre</th>
+                            <th>E-mail</th>
+                            <th>Edad</th>
+                            <th>Teléfono</th>
+                            <th>Reservas</th>
+                            <th>Comentarios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TY2098</td>
+                            <td>2849093</td>
+                            <td>Andrés Torres</td>
+                            <td>prueba@prueba.com</td>
+                            <td>23</td>
+                            <td>3128930920</td>
+                            <td>Bogotá - Medellin</td>
+                            <td>
+                                <select>
+                                <option value="No seleccionado" selected>No seleccionado</option>
+                                <option value="">Extremadamente Insatisfecho </option>
+                                <option value="">Insatisfecho </option>
+                                <option value="">Ni satisfecho o insatisfecho </option>
+                                <option value="">Satisfecho </option>
+                                <option value="">Extremadamente Satisfecho </option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            </div>
+        </section>
+            <section>
+                <footer>
+                    <div class="pie">
+                        <div class="iconos">
+                                <div class="telefono">
+                                    <span class="icon-phone">3625566</span>
+                                </div>
+                                
+                                <div class="direccion">
+                                    <span class="icon-location2">cra 45 h 65</span>
+                                </div>
+                                
+                                <div class="copyright">
+                                    <span class="icon-cop">Todos los derechos reservados</span>
+                                </div>
+                                
+                        </div>
+                        <div class="redes">
+                            <div class="facebook">
+                                <span class="icon-facebook"></span>
+                            </div>
+                            <div class="youtube">
+                                <span class="icon-youtube"></span>
+                            </div>
+                            <div class="correo">
+                                <span class="icon-mail4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            
+            </section>
+        
+</body>
+</html>
