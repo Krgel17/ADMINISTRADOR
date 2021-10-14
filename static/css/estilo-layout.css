@@ -59,7 +59,6 @@ footer .pie .redes{
     padding: 20px 20px 20px 20px; 
     margin-right: 420px;
     display: flex;
-   
 }
 footer .pie .redes .icon-facebook::before{
     padding-left: 400px;
@@ -74,4 +73,11 @@ footer .pie .redes .icon-youtube::before{
 footer .pie .redes .icon-mail4::before{
     font-family: 'icomoon';
     content: "\e901";
+}
+
+header article .inicio{
+    float: left;
+    color: rgb(27, 31, 49);
+    margin-left: 80%;
+    margin-top: 30px;
 }

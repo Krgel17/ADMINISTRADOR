@@ -5,31 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
+    <link rel="shortcut icon" href="static/img/travel-g000d4f80d_640.png" type="image/x-icon">
     <link rel="stylesheet" href="static/CSS/normalize.min.css">
     <link rel="stylesheet" href="static/css/estilo-layout.css">
     <link rel="stylesheet" href="static/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="JS/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
+    <form action="" method="GET" name="paginaPrincipal"></form>
     <header>
         <article>
             <div class="encabezado">
                 <div class="logo">
-                    <img src="static/img/logo.jpg" >
+                    <img src="static/img/logo.jpg" alt="" >
                 </div>
-                <div class="usuario">
-                    <label>User</label>
-                        <em class="fas fa-user-circle"></em>
-                        <div>
-                            <input class="btn1" type="button" value="Cerrar sesion" name="cerrar sesion">
-                        </div>
-                    
+                <div class="inicio">
+                    <a href="">Inicio</a>
                 </div>
             </div>            
         </article>
     </header>
-    <h1>Administrador</h1>
+    <section>
+        <h1>Administrador</h1>
+        <div class="barra">
+            <div class="logo1">
+                <em class="fas fa-user-circle"></em>
+            </div>
+            <div class="salir">
+                <a class="salir" href={{url_for("static", filename="index.html") }}>Salir </a>
+            </div>
+    </section>
     <section>
         <div class="ventanas">
             <ul class="tabs">
@@ -41,7 +47,7 @@
         <div class="pantallas">
             <article class="usuario1" id="tab1">
                 <div class="crear1">
-                    <input class="btn1" type="submit" value="Crear Nuevo Usuario ">
+                    <input class="btn1" type="submit" value="Crear Nuevo Usuario" href={{url_for("static", filename="nuevo.html")>
                 </div>
                 <div class="caja">
                     <input class="cuadro" type="search" placeholder="Consultar usuario"><br>
@@ -52,10 +58,9 @@
             </article>
             <article>
             <div class="tabla">
-                <table border="1">
+                <table class="table" border="1">
                     <thead>
                         <tr>
-                            
                             <th>Código</th>
                             <th>Identificación</th>
                             <th>Nombre</th>
@@ -77,7 +82,7 @@
                             <td>Bogotá - Medellin</td>
                             <td>
                                 <select>
-                                <option value="No seleccionado" selected>No seleccionado</option>
+                                <option value="  " selected>   </option>
                                 <option value="">Extremadamente Insatisfecho </option>
                                 <option value="">Insatisfecho </option>
                                 <option value="">Ni satisfecho o insatisfecho </option>
@@ -89,7 +94,100 @@
                     </tbody>
                 </table>
             </article>
+            <article class="usuario2" id="tab2">
+                <div class="crear1">
+                    <input class="btn1" type="submit" value="Crear Nuevo Piloto" href={{url_for("static", filename="nuevo.html")>
+                </div>
+                <div class="caja">
+                    <input class="cuadro" type="search" placeholder="Consultar piloto"><br>
+                </div>
+                <div class="caja">
+                    <input class="boton" type="submit" value="Buscar"><br>
+                </div>               
+            </article>
+            <article>
+            <div class="tabla">
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Identificación</th>
+                            <th>Nombre</th>
+                            <th>E-mail</th>
+                            <th>Edad</th>
+                            <th>Teléfono</th>
+                            <th>Vuelos Asignados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PT298</td>
+                            <td>2834093</td>
+                            <td>Juan Sanchez</td>
+                            <td>piloto1@piloto.com</td>
+                            <td>45</td>
+                            <td>3139870920</td>
+                            <td>
+                                <select>
+                                <option value="No seleccionado" selected>No seleccionado</option>
+                                <option value="">A340</option>
+                                <option value="">C390</option>
+                                <option value="">E303</option>
+                                <option value="">T904</option>
+                                <option value="">Z394</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            </article>
+            <article class="usuario3" id="tab3">
+                <div class="crear1">
+                    <input class="btn1" type="submit" value="Crear Nuevo Vuelo" href={{url_for("static", filename="nuevo.html")>
+                </div>
+                <div class="caja">
+                    <input class="cuadro" type="search" placeholder="Consultar Vuelo"><br>
+                </div>
+                <div class="caja">
+                    <input class="boton" type="submit" value="Buscar"><br>
+                </div>               
+            </article>
+            <article>
+            <div class="tabla">
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Código de Vuelo</th>
+                            <th>Avión</th>
+                            <th>Piloto</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select>
+                                <option value="No seleccionado" selected>No seleccionado</option>
+                                <option value="">A340</option>
+                                <option value="">C390</option>
+                                <option value="">E303</option>
+                                <option value="">T904</option>
+                                <option value="">Z394</option>
+                                </select>
+                            </td>
+                            <td>AIRBUS 380</td>
+                            <td>Juan Sanchez</td>
+                            <td>Montería</td>
+                            <td>Medellin</td>
+                            <td>22/10/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </article>
         </section>
             <section>
                 <footer>
