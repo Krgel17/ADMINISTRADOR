@@ -13,7 +13,7 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <form action="" method="GET" name="paginaPrincipal"></form>
+    <form action="" method="GET" name="paginaPrincipal">
     <header>
         <article>
             <div class="encabezado">
@@ -26,169 +26,170 @@
             </div>            
         </article>
     </header>
-    <section>
-        <h1>Administrador</h1>
+    <section> 
         <div class="barra">
+            <h1>Administrador</h1>
             <div class="logo1">
                 <em class="fas fa-user-circle"></em>
+                <a class="salir" href={{url_for("static", filename="index.html") }}>Cerrar Sesión</a>
             </div>
-            <div class="salir">
-                <a class="salir" href={{url_for("static", filename="index.html") }}>Salir </a>
-            </div>
-    </section>
-    <section>
         <div class="ventanas">
-            <ul class="tabs">
-                <li class="usuario"><a href="#tab1"><span class="fas fa-users"></span><span class="tab-text"> Usuarios</span></a></li>
-                <li class="usuario"><a href="#tab2"><span class="fas fa-user-shield"></span><span class="tab-text">Pilotos</span></a></li>
-                <li class="usuario"><a href="#tab3"><span class="fas fa-plane-departure"></span><span class="tab-text">Vuelos</span></a></li>
+            <body>
+                <ul class="tabs">
+                    <div class="parte"> 
+                    <li class="usuario"><a href="#tab1"><span class="fas fa-users"></span><span class="tab-text"> Usuarios</span></a></li>
+                    <li class="usuario"><a href="#tab2"><span class="fas fa-user-shield"></span><span class="tab-text">Pilotos</span></a></li>
+                    <li class="usuario"><a href="#tab3"><span class="fas fa-plane-departure"></span><span class="tab-text">Vuelos</span></a></li>
+                    </div>
+                    <div class="opcion3">
+                        <article class="usuario1" id="tab1">
+                            <div class="crear1">
+                                <input class="btn1" type="submit" value="Crear Nuevo Usuario" href="static/templates/nuevo.html">
+                            </div>
+                            <div class="caja">
+                                <input class="cuadro" type="search" placeholder="Consultar usuario"><br>
+                            </div>
+                            <div class="caja">
+                                <input class="boton" type="submit" value="Buscar"><br>
+                            </div>               
+                        <div class="tabla">
+                            <table class="table" >
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Identificación</th>
+                                        <th>Nombre</th>
+                                        <th>E-mail</th>
+                                        <th>Edad</th>
+                                        <th>Teléfono</th>
+                                        <th>Reservas</th>
+                                        <th>Comentarios</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TY2098</td>
+                                        <td>2849093</td>
+                                        <td>Andrés Torres</td>
+                                        <td>prueba@prueba.com</td>
+                                        <td>23</td>
+                                        <td>3128930920</td>
+                                        <td>Bogotá - Medellin</td>
+                                        <td><input class="texbox"></td>
+                                        <td>
+                                            <div><input class="boton" type="submit" value="Editar"></div>
+                                        </td>
+                                        <td>
+                                            <div><input class="boton" type="submit" value="Eliminar"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </div>
+            </body>
+           
+                
+                <div class="opcion3">
+                    <article class="usuario2" id="tab2">
+                        <div class="crear1">
+                            <input class="btn1" type="submit" value="Crear Nuevo Piloto" href={{url_for("static", filename="nuevo.html")>
+                        </div>
+                        <div class="caja">
+                            <input class="cuadro" type="search" placeholder="Consultar piloto"><br>
+                        </div>
+                        <div class="caja">
+                            <input class="boton" type="submit" value="Buscar"><br>
+                        </div>               
+                    <div class="tabla">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Identificación</th>
+                                    <th>Nombre</th>
+                                    <th>E-mail</th>
+                                    <th>Edad</th>
+                                    <th>Teléfono</th>
+                                    <th>Vuelos Asignados</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PT298</td>
+                                    <td>2834093</td>
+                                    <td>Juan Sanchez</td>
+                                    <td>piloto1@piloto.com</td>
+                                    <td>45</td>
+                                    <td>3139870920</td>
+                                    <td>T383</td>
+                                    <td>
+                                        <div><input class="boton" type="submit" value="Editar"></div>
+                                    </td>
+                                    <td>
+                                        <div><input class="boton" type="submit" value="Eliminar"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </article>
+                </div>
+
+                <div class="opcion3">
+                    <article class="usuario3" id="tab3" >
+                        <div class="crear1">
+                            <input class="btn1" type="submit" value="Crear Nuevo Vuelo" href={{url_for("static", filename="nuevo.html")>
+                        </div>
+                        <div class="caja">
+                            <input class="cuadro" type="search" placeholder="Consultar Vuelo"><br>
+                        </div>
+                        <div class="caja">
+                            <input class="boton" type="submit" value="Buscar"><br>
+                        </div>               
+                    <div class="tabla">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Código de Vuelo</th>
+                                    <th>Avión</th>
+                                    <th>Piloto</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Fecha</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>C399</td>
+                                    <td>AIRBUS 380</td>
+                                    <td>Juan Sanchez</td>
+                                    <td>Montería</td>
+                                    <td>Medellin</td>
+                                    <td>22/10/2021</td>
+                                    <td>
+                                        <div><input class="boton" type="submit" value="Editar"></div>
+                                    </td>
+                                    <td>
+                                        <div><input class="boton" type="submit" value="Eliminar"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </article>
+                </div>
             </ul>
         </div>
-        <div class="pantallas">
-            <article class="usuario1" id="tab1">
-                <div class="crear1">
-                    <input class="btn1" type="submit" value="Crear Nuevo Usuario" href={{url_for("static", filename="nuevo.html")>
-                </div>
-                <div class="caja">
-                    <input class="cuadro" type="search" placeholder="Consultar usuario"><br>
-                </div>
-                <div class="caja">
-                    <input class="boton" type="submit" value="Buscar"><br>
-                </div>               
-            </article>
-            <article>
-            <div class="tabla">
-                <table class="table" border="1">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Identificación</th>
-                            <th>Nombre</th>
-                            <th>E-mail</th>
-                            <th>Edad</th>
-                            <th>Teléfono</th>
-                            <th>Reservas</th>
-                            <th>Comentarios</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>TY2098</td>
-                            <td>2849093</td>
-                            <td>Andrés Torres</td>
-                            <td>prueba@prueba.com</td>
-                            <td>23</td>
-                            <td>3128930920</td>
-                            <td>Bogotá - Medellin</td>
-                            <td>
-                                <select>
-                                <option value="  " selected>   </option>
-                                <option value="">Extremadamente Insatisfecho </option>
-                                <option value="">Insatisfecho </option>
-                                <option value="">Ni satisfecho o insatisfecho </option>
-                                <option value="">Satisfecho </option>
-                                <option value="">Extremadamente Satisfecho </option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            <article class="usuario2" id="tab2">
-                <div class="crear1">
-                    <input class="btn1" type="submit" value="Crear Nuevo Piloto" href={{url_for("static", filename="nuevo.html")>
-                </div>
-                <div class="caja">
-                    <input class="cuadro" type="search" placeholder="Consultar piloto"><br>
-                </div>
-                <div class="caja">
-                    <input class="boton" type="submit" value="Buscar"><br>
-                </div>               
-            </article>
-            <article>
-            <div class="tabla">
-                <table class="table" border="1">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Identificación</th>
-                            <th>Nombre</th>
-                            <th>E-mail</th>
-                            <th>Edad</th>
-                            <th>Teléfono</th>
-                            <th>Vuelos Asignados</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>PT298</td>
-                            <td>2834093</td>
-                            <td>Juan Sanchez</td>
-                            <td>piloto1@piloto.com</td>
-                            <td>45</td>
-                            <td>3139870920</td>
-                            <td>
-                                <select>
-                                <option value="No seleccionado" selected>No seleccionado</option>
-                                <option value="">A340</option>
-                                <option value="">C390</option>
-                                <option value="">E303</option>
-                                <option value="">T904</option>
-                                <option value="">Z394</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            </article>
-            <article class="usuario3" id="tab3">
-                <div class="crear1">
-                    <input class="btn1" type="submit" value="Crear Nuevo Vuelo" href={{url_for("static", filename="nuevo.html")>
-                </div>
-                <div class="caja">
-                    <input class="cuadro" type="search" placeholder="Consultar Vuelo"><br>
-                </div>
-                <div class="caja">
-                    <input class="boton" type="submit" value="Buscar"><br>
-                </div>               
-            </article>
-            <article>
-            <div class="tabla">
-                <table class="table" border="1">
-                    <thead>
-                        <tr>
-                            <th>Código de Vuelo</th>
-                            <th>Avión</th>
-                            <th>Piloto</th>
-                            <th>Origen</th>
-                            <th>Destino</th>
-                            <th>Fecha</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <select>
-                                <option value="No seleccionado" selected>No seleccionado</option>
-                                <option value="">A340</option>
-                                <option value="">C390</option>
-                                <option value="">E303</option>
-                                <option value="">T904</option>
-                                <option value="">Z394</option>
-                                </select>
-                            </td>
-                            <td>AIRBUS 380</td>
-                            <td>Juan Sanchez</td>
-                            <td>Montería</td>
-                            <td>Medellin</td>
-                            <td>22/10/2021</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            </article>
-        </section>
+            
+    </section>
+    </form>
             <section>
                 <footer>
                     <div class="pie">
@@ -221,6 +222,7 @@
                 </footer>
             
             </section>
+    </section>
         
 </body>
 </html>

@@ -11,13 +11,13 @@
 }
 
 header article .encabezado{
+    margin-top: 40px;
     display: flex;
     width: 85%;
     margin: auto;
     background-color: white;
     border: solid;
     border-radius: 20px 20px 20px 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header article .encabezado img{
@@ -28,10 +28,121 @@ header article .encabezado img{
 }
 
 header article .inicio{
-    float: left;
     color: rgb(27, 31, 49);
-    margin-left: 80%;
-    margin-top: 30px;
+    margin-right: 10%;
+    padding: 1%;
+    font-size: 16px;
+    text-align: right;
+
+}
+
+body{
+    background: #e8e8e8;
+    
+}
+
+h1{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 1px;
+    text-align: center;
+    font-size: 20px; 
+}
+
+.logo1{
+    margin-right: 10%;
+    padding: 1%;
+    font-size: 12px;
+    text-align: right;
+}
+
+
+.ventanas .tabs{
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 15px; 
+    margin-top: 10px;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+section .ventanas .tabs .usuario{
+    width: auto;
+    max-width: 40%;
+    padding: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+section .pantallas{
+    margin-bottom: 12px;  
+    margin-left: auto;
+    margin-right: auto; 
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
+}
+
+
+
+.ventanas .tabs .usuario .tab-text{
+    margin-left: 5px;
+    
+}
+section .ventanas .tabs .parte .usuario{
+    display: flex;
+}
+
+section .crear1{
+    text-align: center;
+    border-top: 50%;
+    padding: 20px 0px 20px;
+}
+section .btn1{
+    border-radius: 4px;
+    font-size: 15px; 
+    font-weight: bold;
+    padding: 2px;
+}
+
+section .caja{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px; 
+}
+section .boton{
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 15px; 
+}
+
+section .tabla{
+    padding: 20px;
+    text-align: center;
+    text-size-adjust: 10px;
+
+}
+
+table {
+    width: 80%;
+    border: 1px solid #000;
+    font-size: 12px;
+
+}
+
+section .table{
+    width: 100px;
+    margin: 0 auto;
+    padding: auto;
+    border-collapse: separate;
+    border-spacing: 10px 8px
 }
 
 footer .pie {
@@ -46,7 +157,7 @@ footer .pie {
 
 footer .pie .iconos{
     float: left;
-    margin-left: 20px;   
+    margin-left: 5%;   
 }
 
 footer .pie .iconos .icon-phone::before{
@@ -65,8 +176,8 @@ footer .pie .iconos .icon-cop::before{
 }
 
 footer .pie .redes{
-    padding: 20px 20px 20px 20px; 
-    margin-right: 420px;
+    padding: auto; 
+    margin-right: auto;
     display: flex;   
 }
 
@@ -85,108 +196,4 @@ footer .pie .redes .icon-youtube::before{
 footer .pie .redes .icon-mail4::before{
     font-family: 'icomoon';
     content: "\e901";
-}
-
-body{
-    background: #e8e8e8;
-}
-
-h1{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: center;
-}
-
-.barra{
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.logo1{
-    float: left;
-    color: rgb(27, 31, 49);
-    margin-left: 85%;
-}
-
-.salir{
-    float:right;
-    padding: auto;
-    margin-right: 10%;
-    color: rgb(27, 31, 49);
-}
-
-.ventanas{
-    display: block;
-}
-.ventanas .tabs{
-    display: flex;
-    width: auto;
-    margin: 8%;
-    margin-top: 10px;
-    list-style: none;
-    background: rgb(255, 255, 255);
-    border: solid;
-    border-radius: 20px 20px 20px 20px;
-}
-
-
-section .ventanas .tabs .usuario{
-    width: auto;
-    max-width: 40%;
-    display: block;
-    padding: 5px 5px;
-    background-color: rgb(249, 253, 253);
-    border-radius: 2px;
-}
-
-section .pantallas{
-    margin-bottom: 50px;  
-    margin-top: 12px; 
-    margin-left: auto;
-    margin-right: auto; 
-    width: 75%;
-    background-color: white;
-    border: solid;
-    border-radius: 20px 20px 20px 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    padding: 5px 5px 5px 5px;
-}
-
-.ventanas .tabs .usuario .tab-text{
-    margin-left: 4px;
-}
-
-section .crear1{
-    text-align: center;
-    border-top: 50%;
-    padding: 20px 0px 20px;
-}
-section .btn1{
-    border-radius: 4px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px; 
-    font-weight: bold;
-    padding: 5px;
-}
-
-section .caja{
-    text-align: center;
-    padding: 10px;
-}
-section .boton{
-    text-align: center;
-    font-weight: bold;
-    border-radius: 4px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-section .tabla{
-    padding: 20px;
-    text-align: center;
-}
-section .table{
-    width: 100px;
-    margin: 0 auto;
 }
