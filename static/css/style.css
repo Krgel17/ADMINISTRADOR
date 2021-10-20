@@ -197,3 +197,44 @@ footer .pie .redes .icon-mail4::before{
     font-family: 'icomoon';
     content: "\e901";
 }
+
+.mytabs{
+    display: flex;
+    flex-wrap: wrap ;
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 25px;
+}
+
+
+.mytabs input[type="radio"]{
+    display: none;
+}
+.mytabs input[type="radio"]:checked + label + .info{
+    display: block;
+}
+
+
+.mytabs label {
+    padding: 5px;
+    background: rgb(200, 227, 253);
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.mytabs .info {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    order: 1;
+    display: none;
+}
+
+.mytabs .info h2{
+    font-size: 15px;
+
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: rgb(255, 255, 255);
+}
