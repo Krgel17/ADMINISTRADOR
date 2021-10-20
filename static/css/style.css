@@ -132,8 +132,9 @@ section .tabla{
 
 table {
     width: 80%;
-    border: 1px solid #000;
+    border: 0.5px solid #000;
     font-size: 12px;
+    float: center;
 
 }
 
@@ -216,10 +217,11 @@ footer .pie .redes .icon-mail4::before{
 
 
 .mytabs label {
-    padding: 5px;
+    padding: 2px;
     background: rgb(200, 227, 253);
     font-weight: bold;
     border-radius: 2px;
+    border:solid 0.2px;
 }
 
 .mytabs .info {
@@ -228,6 +230,9 @@ footer .pie .redes .icon-mail4::before{
     background: white;
     order: 1;
     display: none;
+    border: solid 0.2px;
+    border-radius: 0px 20px 20px 20px;
+
 }
 
 .mytabs .info h2{
