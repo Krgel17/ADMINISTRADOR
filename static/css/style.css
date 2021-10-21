@@ -27,13 +27,12 @@ header article .encabezado img{
     border-radius: 20px 20px 20px 20px;
 }
 
-header article .inicio{
-    color: rgb(27, 31, 49);
-    margin-right: 10%;
-    padding: 1%;
-    font-size: 16px;
-    text-align: right;
+.salir1{
+    margin-right: 10px;
+}
 
+.logo1{
+    margin-right: 10px;
 }
 
 body{
@@ -45,18 +44,10 @@ h1{
     display: flex;
     width: 85%;
     margin: auto;
-    margin-top: 1px;
+    margin-top: 10px;
     text-align: center;
     font-size: 20px; 
 }
-
-.logo1{
-    margin-right: 10%;
-    padding: 1%;
-    font-size: 12px;
-    text-align: right;
-}
-
 
 .ventanas .tabs{
     margin-left: 8%;
@@ -88,8 +79,6 @@ section .pantallas{
     border-radius: 20px 20px 20px 20px;
     padding: 2px 2px 2px 2px;
 }
-
-
 
 .ventanas .tabs .usuario .tab-text{
     margin-left: 5px;

@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="static/img/travel-g000d4f80d_640.png" type="image/x-icon">
     <link rel="stylesheet" href="static/CSS/normalize.min.css">
     <link rel="stylesheet" href="static/css/estilo-layout.css">
+    <link rel="stylesheet" href="static/css/estilo-ventana.css">
     <link rel="stylesheet" href="static/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/script.js"></script>
@@ -21,7 +22,12 @@
                     <img src="static/img/logo.jpg" alt="" >
                 </div>
                 <div class="inicio">
-                    <a href="">Inicio</a>
+                    <div class="logo1">
+                        <em class="fas fa-user-circle"></em>
+                        <button class="Salir1">Cerrar sesión</button>
+                        <div>
+                        </div>
+                    </div>
                 </div>
             </div>            
         </article>
@@ -29,10 +35,6 @@
     <section> 
         <div class="barra">
             <h1>Administrador</h1>
-            <div class="logo1">
-                <em class="fas fa-user-circle"></em>
-                <a class="salir" href={{url_for("static", filename="index.html") }}>Cerrar Sesión</a>
-            </div>
         <div class="ventanas">
             <body>
                 <div class="mytabs">
@@ -41,7 +43,46 @@
                     <div class="info">
                         <p>
                         <div class="crear1">
-                            <input class="btn1" type="submit" value="Crear Nuevo Usuario" href="static/templates/nuevo.html">
+                            <a href="#modal1" id="show-modal">Crear Nuevo Usuario</a>
+                        
+                            <aside id="modal1" class="modal">
+                                <div class="content-modal">
+                                    <header>
+                                        <a href="#" class="close-modal">X</a>
+                                        <h2>Formulario de Registro</h2>
+                                    </header>
+                                    <article class="formulario">
+                                        <div class="formularioRegistro">
+                                            <div class="Documento">
+                                                <label>Documento: </label>
+                                                <input type="text" name="identificacion" id="identificacion" minlength="7" maxlength="12" checked="checked">
+                                            </div>
+                                            <div class="Nombres">
+                                                <label>Nombres: </label>
+                                                <input type="text" name="name" id="name">
+                                            </div>
+                                            <div class="Apellidos">
+                                                <label>Apellidos: </label>
+                                                <input type="text" name="lastName" id="lastName">
+                                            </div>
+                                            <div class="Telefono">
+                                                <label>Telefono: </label>
+                                                <input type="text" name="phone" id="phone" minlength="7" maxlength="10" >
+                                            </div>
+                                            <div class="Correo">
+                                                <label> Correo: </label>
+                                                <input type="text" name="email" id="email">
+                                            </div>
+                                            <div class="Contrasena">
+                                                <label>Contraseña: </label>
+                                                <input type="password" name="passw" id="passw">
+                                            </div>
+                                            <input class="btn_registro" type="submit" value="Registrarse">                 
+                                        </div>            
+                                    </article>
+                                </div>
+                                <a href="#" class="btn-close-modal"></a>
+                            </aside>
                         </div>
                         <div class="caja">
                             <input class="cuadro" type="search" placeholder="Consultar usuario"><br>
@@ -92,7 +133,51 @@
                     <div class="info">
                         <p>
                         <div class="crear1">
-                            <input class="btn1" type="submit" value="Crear Nuevo Piloto" href="static/templates/nuevo.html">
+                            <a href="#modal2" id="show-modal">Crear Nuevo Piloto</a>
+
+                            <aside id="modal2" class="modal">
+                                <div class="content-modal">
+                                    <header>
+                                        <a href="#" class="close-modal">X</a>
+                                        <h2>Formulario de Registro</h2>
+                                    </header>
+                                    <article class="formulario">
+                                        <div class="formularioRegistro">
+                                            <div class="Documento">
+                                                <label>Documento: </label>
+                                                <input type="text" name="identificacion" id="identificacion" minlength="7" maxlength="12" checked="checked">
+                                            </div>
+                                            <div class="Nombres">
+                                                <label>Nombres: </label>
+                                                <input type="text" name="name" id="name">
+                                            </div>
+                                            <div class="Apellidos">
+                                                <label>Apellidos: </label>
+                                                <input type="text" name="lastName" id="lastName">
+                                            </div>
+                                            <div class="Edad">
+                                                <label> Edad: </label>
+                                                <input type="number" name="edad" id="edad">
+                                            </div>
+                                            <div class="Telefono">
+                                                <label>Telefono: </label>
+                                                <input type="text" name="phone" id="phone" minlength="7" maxlength="10" >
+                                            </div>
+                                            <div class="Correo">
+                                                <label> Correo: </label>
+                                                <input type="text" name="email" id="email">
+                                            </div>
+                                            <div class="Contrasena">
+                                                <label>Contraseña: </label>
+                                                <input type="password" name="passw" id="passw">
+                                            </div>
+                                            <input class="btn_registro" type="submit" value="Registrarse">                 
+                                        </div>            
+                                    </article>
+                                </div>
+                                <a href="#" class="btn-close-modal"></a>
+                            </aside>
+
                         </div>
                         <div class="caja">
                             <input class="cuadro" type="search" placeholder="Consultar piloto"><br>
@@ -141,7 +226,48 @@
                     <div class="info">
                         <p>
                         <div class="crear1">
-                            <input class="btn1" type="submit" value="Crear Nuevo Vuelo" href="static/templates/nuevo.html">
+                            
+                            <a href="#modal3" id="show-modal">Crear Nuevo Vuelo</a>
+
+                            <aside id="modal3" class="modal">
+                                <div class="content-modal">
+                                    <header>
+                                        <a href="#" class="close-modal">X</a>
+                                        <h2>Formulario de Registro</h2>
+                                    </header>
+                                    <article class="formulario">
+                                        <div class="formularioRegistro">
+                                            <div class="Codigo">
+                                                <label>Código: </label>
+                                                <input type="text" name="identificacion" id="identificacion" minlength="7" maxlength="12" checked="checked">
+                                            </div>
+                                            <div class="Origen">
+                                                <label>Origen: </label>
+                                                <input type="text" name="name" id="name">
+                                            </div>
+                                            <div class="Destino">
+                                                <label>Destino: </label>
+                                                <input type="text" name="lastName" id="lastName">
+                                            </div>
+                                            <div class="Fecha">
+                                                <label> Fecha: </label>
+                                                <input type="date" name="fecha" id="fecha">
+                                            </div>
+                                            <div class="Hora">
+                                                <label>Hora: </label>
+                                                <input type="clock" name="hora" id="hora" minlength="7" maxlength="10" >
+                                            </div>
+                                            <div class="Numero_asientos">
+                                                <label> Numero de Asientos: </label>
+                                                <input type="number" name="asientos" id="asientos" minlength="1" maxlength="3" >
+                                            </div>
+                                            <input class="btn_registro" type="submit" value="Registrarse">                 
+                                        </div>            
+                                    </article>
+                                </div>
+                                <a href="#" class="btn-close-modal"></a>
+                            </aside>
+
                         </div>
                         <div class="caja">
                             <input class="cuadro" type="search" placeholder="Consultar vuelo"><br>
